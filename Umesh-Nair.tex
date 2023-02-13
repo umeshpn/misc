@@ -1,0 +1,362 @@
+\documentclass{resume}
+\usepackage{enumerate}
+\renewcommand{\categoryfont}{\sc}
+\setlength{\oddsidemargin}{1in}
+\setlength{\marginparwidth}{1in}\addtolength{\marginparwidth}{-\marginparsep}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-2in}
+\addtolength{\textwidth}{-2\oddsidemargin}
+\addtolength{\textwidth}{\marginparwidth}
+\addtolength{\textwidth}{\marginparsep}
+\setlength{\topmargin}{-0.5in}
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+\renewcommand{\familydefault}{cmss}
+
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks=true,       % false: boxed links; true: colored links
+     urlcolor=blue,          % color of external links
+     linkcolor=blue,          % color of internal links
+     citecolor=green,        % color of links to bibliography
+     filecolor=black,      % color of file links
+}
+
+
+\author{\textsc{Umesh Nair}}
+%% ------ Address --------------------------------------------------------
+
+\address{
+  1463 Asterbell Dr.\\
+  San Ramon\, CA \\
+  USA 94582\\
+}{
+  +1-971-222-6674\\
+  \mbox{\small\tt umesh.p.nair@gmail.com}\\
+  \mbox{\url{www.linkedin.com/in/umeshpnair/}}  
+}
+
+\newcommand{\Place}[2]{\raggedleft{\textbf{#1}}~~~\raggedright{\textbf{#2}}}
+
+% %%%%%%% \citem
+% \newcommand{\citemhead}[2]{%
+%       {\item[\labelcitem]{\textbf{#1}\hfill\textbf{#2}}\makecategorytitle}}
+
+
+\newcommand{\CC}{C{\tt ++}}
+\begin{document}
+\maketitle
+\addtolength{\parskip}{\baselineskip}
+
+\iftrue
+\begin{category}{Summary}
+\citembullet Seasoned Software Engineer with 25+ years of experience in designing, developing and leading a variety of products including
+distributed, scalable, cloud software, efficient back end APIs, tools and services, as well as desktop and web user interface.  Best known for sound knowledge of computer
+science, algorithms, Mathematics, Internationalization and performance analysis.
+
+Excellent communication and documentation skills, and a passion for
+maintaining code quality and efficiency through benchmarking, profiling tools and theoretical analysis.  Proven technical leadership skills with experience in driving the
+development of small to moderately big projects and delivering on time.
+
+I am seeking a challenging technical role that aligns with my passion of creating robust, efficient and impactful software.
+
+% Highly motivated and experienced software engineer, passionate about mathematics, algorithms and research, who has
+% been a technical lead and individual contributor, looking for a
+% challenging position.
+
+
+\end{category}
+\fi
+
+%% -------- Work experience --------------------------------------------
+
+\iftrue
+\begin{category}{Skill \\ Set}
+  \citembullet \textbf{Languages (Professional development):} Java (16+ years), \CC{} (15+), Python (9+), JavaScript (1+), Dart (1).
+  \citembullet \textbf{Other Languages:} Perl, Scala, Kotlin, R, Lisp, \LaTeX.
+  \citembullet \textbf{Frameworks/Libraries:} Spring, Guice, 
+  Angular, numpy/scipy, JUnit/Mockito/Test frameworks, REST, AWS.
+  \citembullet \textbf{Proprietary languages/frameworks:} Sawzall (Google), Soy (Google), Xpresso (Workday).
+  \citembullet \textbf{Databases:} \textbf{SQL:} MySQL, Oracle, \textbf{No-SQL:} BigTable, Megastore, F1.
+  \citembullet \textbf{Tools/Methodologies:} Agile (Scrum, Kanban),
+  Git/Bitbucket/Github/Jira/Confluence, CI/CD process and tools,
+  Maven, Jenkins.
+  \citembullet \textbf{Domains:} Cloud computing (8+), Privacy and Security (3+), Business Analytics (2+), Internationalization/Unicode (5+ years),
+  Telecommunications (2), Electronic Design Automation (7+), CRM (2+), Web Search (1), Calendars (2+), Embedded systems (2).
+  \citembullet \textbf{Achievements:}   \begin{enumerate}
+  \item Recipient of the \textbf{OC Award} (formerly called the EMG award), the second most prestigious engineering award in Google, for adding non-Gregorian calendar support to Google Calendar.  
+  \item Was a Google code readability expert in \CC{}, Java, Python, JavaScript, Dart and Sawzall.
+  \item Presented papers in Internationalization and Unicode Conference.
+  \end{enumerate}
+\end{category}
+\fi
+
+%% -------- Work experience --------------------------------------------
+
+
+\begin{category}{Current Job}
+\citemhead{Workday Inc., Pleasanton, CA}{Oct 2014 -- Till date}
+
+Senior Backend Software Engineer developing distributed, scalable, efficient, cloud software that power Workday's SAAS product.   Well-known for the
+theoretical analysis, benchmarking, creation and review of design documents and contribution to the developer community with efforts to improve productivity,
+
+Worked in Object Management Server (OMS), Business Intelligence (BI) and UI Server (UIS), primarily in Java (80\%) and the Xpresso framework (15\%).
+proprietary to Workday, as
+% \begin{enumerate}[a)]
+% \item Object Management Server (OMS): The back end framework for Workday.  It is a stateless service that provides APIs for updating and retrieving data in Workday's database.  It also serves as the backbone of Xpresso, Workday's proprietary framework and language for application development.
+
+% \item Business Intelligence (BI): Workday's core reporting and analytics framework, used by Workday development and the customers. It involves application development in Xpresso and the corresponding Java development in OMS.
+
+% \item UI Server and Authentication Gateway (UIS): The bridge between OMS back end and various UI clients.  Also, saves the state of the app and provides authentication services.
+
+% \end{enumerate}
+
+%% Team lead responsibilities
+
+  
+
+
+\begin{enumerate}
+\item A technical lead (upto 5 engineers) in the following projects.  The major responsibilities were discussions with the PMs to finalize the
+  requirements, overall design of the system, working with other groups involved to nail down issues, prepare design documents, develop a significant
+  part of the project, lead the code reviews, and serving as the primary contact person for production support:
+
+\begin{enumerate}
+\item The User Activity System (OMS): Provides an API to retrieve all tasks a user executes in OMS, accessible in Workday App.  In addition to implementing several key features, I developed a REST API that can be used independently or via Workday's Splunk plugin.
+\item Composite reports (BI): a tool by which a user can define rules
+  to take any number of other reports as input, slice and dice in the
+  data, and present it as a separate report with customizable and
+  aggregatable columns and drill-down capabilities. It is one of the
+  main analytics tools for Workday data.
+\item Local Date and Date manipulation API for reports (BI):  Using Workday's date/time API so that a report can have dates in multiple timezones.
+\item Wavefront to Grafana migration (OMS, single-person project): Did one of the first
+  migration efforts, and prepared cookbook for others to follow.
+\item Org chart module (UIS): Displaying and printing (to PDF) organizational charts with minimal memory footprint.
+\item Step-up feature (UIS): This is a mechanism by which customers can define additional authentication process for certain "privileged" tasks.
+\item Security fixes (UIS): Addressing various security issues, working with Workday's security team and security auditors.
+\end{enumerate}
+\item An individual contributor to the following projects:
+\begin{enumerate}
+\item The zero downtime initiative (UIS): Designed and implemented the seamless save feature, that saves crucial information about each task in Redis cache, so that it can be retrieved later in a failure/recovery situation.
+\item The Authentication Gateway microservice (UIS): The first microservice in Workday.  This was designed and developed by a team of 5 engineers with equal responsibility. Developed various components of the system.
+\item External Data Framework (OMS): Was involved in the design of different components in the initial stages of development.
+\item Indexing framework (BI): Redesigned part of the framework used for reports.  Incorporated some UI enhancements by which the users have clear indication of which fields are indexed and how.
+\item Data Scramble System (OMS): Performance improvement of various components of the system.
+\item Key rotation and re-encryption (OMS): Adding monitoring code and development of dashboards.
+\item (UIS): Designed and implemented several small projects supporting many workday features, providing the communication between the back-end Object Management Server and the UI clients, and addressing security issues.
+\end{enumerate}
+\item An advocate of code quality, performance and standard compliance of software, analyzing problems before implementation, and maintaining good documentation. Some key achievements:
+\begin{enumerate}
+\item (OMS) To compare different ways to implement the User Activity REST API, wrote a system in Python to simulate massive number of REST calls.  The best solution thus implemented improved the performance by 80 - 98\% when called standalone, and 40 -
+  60\% when called via the Splunk add-on.
+\item (UIS) A theoretical analysis of a suggested improvement for Org chart printing showed 30\% improvement.  The implementation yielded 27\% improvement, which solved all full GC issues occurring when very large tenants are used.
+\item (OMS) Using SonarQube, analyzed the scramble module for possible code smells, security vulnerabilities and potential bugs, and led an initiative to fix all critical and major issues.
+\item (All) Was an active reviewer of Java code written by team members, ensuring standard compliance, code quality and efficiency.
+\item (OMS) Was a member of the company-wide build productivity advocates team that sought ways to improve the build pipeline.  As part of these efforts, worked on enabling static mocking, making server tests run concurrent, separating tests from the
+  main build jar and many similar tasks.
+\item (All) Developed several Python scripts for ad-hoc tasks and for trouble-shooting production support issues.
+\end{enumerate}
+\end{enumerate}
+
+
+
+\end{category}
+
+\begin{category}{Prior Experience}
+
+\citemhead{Google Inc., Mountain View, CA}{May 2007 -- Oct 2014}
+
+  Senior Software Engineer, developing robust backend libraries, modern web UI using the state-of-the art framework and tools, and contributing open
+  source community by making significant contributions to International Components of Unicode.
+
+  Worked in (a) Internationalization (b) Google Relationship Manager (c) Greentea (d) Google Calendar, and (e) 20\% projects in Google photos, 
+  Google Health and Google Maps.
+  
+  \begin{enumerate}
+  \item Technical lead and the primary contact for:
+  \begin{enumerate}
+    \item Non-Gregorian calendar support for Google calendar.  I added the basic framework and Chinese and Islamic
+    (arithmetic and astronomical) Calendars. As per 2010 data, 637 million internet users use alternate calendars on a regular basis. The work was primarily in JavaScript.
+    \item The contact module for Greentea project.
+    \item Libraries in \CC{} and Java (and JavaScript also for Google)
+      for adding plural/gender support to International Components of Unicode.  This was a key component of internationalization of Google Plus, which could show ``Alice and \emph{her} 10 \emph{friends}
+      also \emph{liked} this post.'' in many languages, showing the correct noun and verb forms.
+    \item A tool set in Python for importing/exporting data from Google's Translation console to the Open source data repository CLDR.
+    \item Several key components of the standard library of the Dart package, including popup window and date picker.
+  \end{enumerate}
+  \item An individual contributor to the open source project International Components for Unicode (ICU), in \CC{} and Java:
+  \begin{enumerate}
+  \item Revising and improving efficiency of collation algorithm for CJKV languages.
+  \item Adding plural/gender support.
+  \item Many features related to Unicode, calendar and time zones, as well as tools for importing/exporting locale data.
+  \end{enumerate}
+  
+\item Developer of several 20\% and volunteering projects in various teams.
+  \begin{enumerate}
+  \item Implemented a streaming zip writer in \CC{} for the ``Download album'' feature of Google Photos.  (20\% project)
+  \item Implemented a UI enhancement in Google Maps, showing different points in My maps with different numbered icons automatically. (20\% project)
+  \item Added a growth chart utility to the Google Health product (20\% project).  This product had been sunset a few years later.
+  \item Helped various teams (Google search, GMail, Orkut, Android) in getting their products released in Indian languages, by doing UI reviews and inspections.
+  \end{enumerate}
+% \item {\em Designing and developing \textbf{Greentea}. (Apr 2013 -- Oct 2014))}
+
+%   Greentea is a complete rewrite of {\em Google Relationship Manager},
+%   a web-based CRM tool for supporting the sales force, using Java and
+%   Google's F1 database in the back end and Dart in the front end.  As
+%   part of the project, we
+%   used a pre-beta version of the Dart language, compiler
+%       and IDE, helping the Dart team identifying and fixing 
+%       issues, and developing the infrastructure and libraries for Dart.
+
+%   \item {\em Designing and developing various components for the search
+%         infrastructure for \textbf{Google Relationship
+%   Manager}, an online CRM tool to support the sales force. (Apr 2012 -- Mar 2013)}
+
+ 
+%   The search infrastructure was Google web search in
+%   a smaller scale, but with some additional capabilities, like
+%   including the user's emails, calendar and docs also to the search
+%   index and providing additional user-level access control and
+%   security.  The data was stored in mysql databases, big table and
+%   megastore, and the indexing was done using Mustang ST and
+%   ST-BTI. The work was mainly done in Java using flume, a Java library
+%   for map-reduce.
+
+%   \item {\em Adding
+%   plural/gender support to various libraries and compilers that
+%   supported many products, mainly \textbf{Google{\tt +}}.} (Sep 2010 -- Jul 2011)
+
+%   It included developing the necessary libraries in \CC{}, Java and
+%   JavaScript, enhancing Google Translation Console tool and the Soy
+%   compiler to support the syntax.
+
+%   \item {\em The ``download album'' feature in (C++ and Java)
+%   \textbf{Google{\tt +} photos}. (Mar - Apr 2012)}
+
+%   My contribution (done in 20\% project time) was to develop a {\em
+%   streaming zip library} in \CC{}, where the input and output can be streamed.
+
+%   \item {\em Adding non-Gregorian calendar support to \textbf{Google calendar} from
+%   concept to implementation. (Jun 2008 -- Apr 2009)}
+
+%   I analyzed the impact of having non-Gregorian calendar support,
+%   developed the basic infrastructure as a JavaScript library, and
+%   implemented Islamic (Hijri) and Chinese calendars. I received
+%   Google's {\bf OC award} (formerly called the EMG award) for this work.
+
+%   \item {\em Designing and developing \textbf{internationalization libraries}
+%         in \CC{} and Java.}
+
+%   This included (a) development of the open source C++/Java library {\em
+%   International Components of Unicode} and
+%   deploying it in Google. (b) developing internationalization APIs and libraries for various
+%         business needs for Google, and (c) supporting other groups in adopting internationalization
+%         practices.
+\end{enumerate}
+
+
+  \citemhead{Mentor Graphics Corporation, Wilsonville, OR}{Jan 1999 -- May 2007}
+
+  Senior Development Engineer, developing and leading projects involving backend software libraries as well as full-stack development of a desktop application in \CC{}
+  and Qt.
+
+  \begin{enumerate}
+  \item Lead engineer maintaining \textbf{Falcon Framework}, the core \CC{} library used by all products on six operating systems, consisting of a language
+    compiler, a data management library and tool, an X-windows based graphics library and a
+    print/plot system.
+  \item Lead engineer of \textbf{ICStudio}, a data management tool for
+    handling large, complex designs.  Written in \CC{}, it used Mentor
+    Graphics' Falcon Framework DB in the backend and Qt in the front end.
+  \end{enumerate}
+
+  \citemhead{Software Technologies Group, Westchester, IL} {Feb 1998 - Jan 1999}
+
+  Software Engineering Consultant involved in the design and development of \textbf{TSC720/TSC400
+  System} for Teradyne Communications. I was responsible for the design
+  and development of the \textbf{Line Test Server}, an embedded system software for the hardware components
+  that measures and analyzes various electrical parameters on telephone
+  lines.
+
+  \citemhead{Lucent Technologies, Naperville, IL}{Jan - Nov 1997}
+
+  Software Engineering Consultant involved in the design and development of the overload control feature
+  of the \textbf{New Network Switch}, developed on SunOS/Solaris and deployed
+  on Fault Tolerant Unix (FTX) using \CC{}.
+
+  \citemhead{Fidelity Investments, Boston, MA}{May 1995 -- Jun 1996}
+
+  Software Engineering Consultant involved in the design, development and testing of the
+  \textbf{Global Business Calendar} C API and \CC{} class library for
+  the \textbf{Vantage 20/20} project.
+\iffalse
+  \citem{Senior Systems Analyst}, Tata Consultancy Services, Mumbai, India. (May 1993
+  -- Jan 1997)
+
+  In addition to the projects mentioned above, I worked in TCS \textbf{Share
+  accounting} project. (Jun 1993 -- Apr 1995)
+
+  \citem{Systems Analyst}, Lakme Ltd., Mumbai, India. (Jan 1992 -- May
+  1993).
+
+  Worked on various inventory control systems.
+
+  \citem{Computer Programmer}, Supercold Refrigeration Industries,
+  Trivandrum, India (Aug 1991 -- Jan 1992).
+\fi
+
+\end{category}
+
+\begin{category}{Personal \\ projects \&\\ Documents}
+\citembullet Calendar: \url{https://github.com/umeshpn/calendar}: Libraries in \CC{} and Java for astronomical and calendrical calculations.  Routines from this library is used to make Indian calendars since 2006 at \url{http://malayalam.usvishakh.net/calendars/}. It also has a page that lists 150 years of Indian astronomical calendars.
+\citembullet Graphical Algorithms: \url{https://github.com/umeshpn/GraphicalAlgorithms}
+\citembullet Collection of puzzles and mathematical articles (\LaTeX/PDF): \url{http://www.usvishakh.net/documents/pdfs.html}
+\citembullet Collection of chess problems and combinations (\LaTeX/PDF):  \url{http://www.usvishakh.net/documents/chess/chess-combinations.pdf}
+\end{category}
+
+%% -------- Publication --------------------------------------------
+
+\begin{category}{Publications}
+  \citembullet \verb|http://arxiv.org/abs/math.NT/0408107|, {\em Elementary results on numbers of the
+    binary quadratic form $a^2+ab+b^2$}.
+  \citembullet {\em Non-Gregorian calendars in JavaScript}, conference
+  paper at Internationalization and Unicode Conference 33, Santa
+  Clara, CA, 2009.
+\end{category}
+
+%% ------- Education ---------------------------------------------------
+
+\begin{category}{Education}
+  \citem{Master of Technology (M.S. equivalent)}, College of Engineering, University of Kerala,
+  Trivandrum, India.
+  \citem{Bachelor of Technology (B.S. equivalent)}, Regional Engineering College, University of
+    Calicut, Calicut, India. 
+\end{category}
+
+\iffalse
+\begin{category}{Graduate\\Thesis}
+  \citembullet {\em Digital simulation of two-way mixed
+  traffic:} Included traffic data collection using video technique,
+  development of software to extract data from video,
+  development of a library in C for statistical data
+  analysis and simulation and development of a simulation
+  model for two way mixed traffic. (Jan - Jun 1991)
+\end{category}
+
+
+\begin{category}{Additional\\Graduate\\Courses}
+  \citembullet Have taken courses in several subjects, including {\em
+  Advanced Algorithms}, {\em Computer Architecture}, {\em Database
+  Systems}, {\em Operating Systems}, {\em Advanced Java Programming},
+  {\em Object Oriented Design and Programming}, {\em Machine learning} etc.
+\end{category}
+\fi
+
+\end{document}
+
+
+
+
