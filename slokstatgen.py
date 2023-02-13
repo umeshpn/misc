@@ -40,7 +40,8 @@ class SlokamStatsGenerator:
         self.meter_round_counts = [
             ['\\VSr', 5],
             ['\\VKm', 5],
-            ['\\VSv', 5]
+            ['\\VSv', 5],
+            ['\\VMk', 1]
         ]
         self.slok_counts = dict()
 
@@ -359,7 +360,7 @@ class SlokamStatsGenerator:
 
 
 if __name__ == '__main__':
-    in_dir = '/Users/umesh.nair/github-projects/personal-tex/xetex/souparnika-slokams'
+    in_dir = '/Users/umesh/github-projects/personal-tex/xetex/souparnika-slokams'
     ssg = SlokamStatsGenerator(
         '%s/%s' % (in_dir, 'souparnika-2.tex'),
         '%s/%s' % (in_dir, 'stats.tex'),
