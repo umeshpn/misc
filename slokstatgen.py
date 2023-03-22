@@ -41,7 +41,7 @@ class SlokamStatsGenerator:
             ['\\VSr', 5],
             ['\\VKm', 5],
             ['\\VSv', 5],
-            ['\\VMk', 1]
+            ['\\VMk', 2]
         ]
         self.slok_counts = dict()
 
