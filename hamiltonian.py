@@ -34,7 +34,7 @@ class Graph:
     def are_adjacent(self, a, b):
         """True iff there is an edge between the two nodes."""
         return self.graph[a][b] == 1
-        
+
     def can_add(self, node, path, index):
         """Returns True of the node can be added to path[index]."""
         return node not in path and self.are_adjacent(path[index - 1], node)
@@ -105,7 +105,7 @@ class Graph:
 class YasarGraph(Graph):
     def __init__(self):
         super().__init__(23)
-        
+
     def node_name(self, k):
         if k == 0:
             return "Start"
@@ -169,4 +169,3 @@ if __name__ == '__main__':
     if debug:
         yasar.print_graph()
     yasar.solve()
-
