@@ -3,7 +3,7 @@
 from abc import abstractmethod
 
 # Set this to true to print the graph and each backtracking step.
-debug = False
+debug = True
 
 
 # A graph representing non-cyclic Hamiltonian path.
@@ -53,7 +53,8 @@ class Graph:
         for node in path:
             if node == -1:
                 break
-            print(self.node_name(node) + " ==> ", end='')
+            # print(self.node_name(node) + " ==> ", end='')
+            print(self.node_name(node), end='')
         print()
 
     def solve(self):
@@ -84,7 +85,7 @@ class Graph:
 
                 if not self.solve_recursively(path, index + 1):
                     path[index] = -1
-                    self.print_path(path, False)
+                    # self.print_path(path, False)
 
         self.print_path(path, False)
 

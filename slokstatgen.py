@@ -14,7 +14,6 @@ numbers = [
     'Thirty', 'ThirtyOne', 'ThirtyTwo', 'ThirtyThree', 'ThirtyFour', 'ThirtyFive', 'ThirtySix', 'ThirtySeven',
     'ThirtyEight', 'ThirtyNine', 'Forty', 'FortyOne', 'FortyTwo'
 ]
-
 class SlokamStatsGenerator:
     def __init__(self, infile, outfile, people_file, meter_file):
         self.infile = infile
@@ -41,7 +40,7 @@ class SlokamStatsGenerator:
             ['\\VSr', 5],
             ['\\VKm', 5],
             ['\\VSv', 5],
-            ['\\VMk', 2]
+            ['\\VMk', 3]
         ]
         self.slok_counts = dict()
 
